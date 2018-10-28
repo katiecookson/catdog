@@ -1,0 +1,19 @@
+{
+  "name": "catdog",
+  "version": "1.0.0",
+  "description": "app to create cute cats and dogs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katiecookson/catdog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katiecookson/catdog/issues"
+  },
+  "homepage": "https://github.com/katiecookson/catdog#readme"
+}
