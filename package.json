@@ -4,7 +4,7 @@
   "description": "app to create cute cats and dogs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha './test/*.spec.js' --require ./test/setup.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/katiecookson/catdog/issues"
   },
-  "homepage": "https://github.com/katiecookson/catdog#readme"
+  "homepage": "https://github.com/katiecookson/catdog#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "babel": "^6.23.0"
+  }
 }

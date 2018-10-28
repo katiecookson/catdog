@@ -1,0 +1,14 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "target": { "node": 6.10 },
+        "useBuiltIns": false,
+        "loose": false,
+        "exclude": [],
+        "debug": false
+      }
+    ]
+  ]
+}
