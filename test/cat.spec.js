@@ -18,4 +18,12 @@ describe('Cat', function () {
 
         assert.equal(cat.numberOfLegs, expectedNumberOfLegs);
     });
+
+    it('can set tail', async function () {
+        const typeOfTail= 'fluffy';
+        const cat = new Cat();
+        cat.setTail(typeOfTail);
+
+        assert.equal(cat.tail, typeOfTail);
+    });
 });
