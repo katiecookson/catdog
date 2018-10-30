@@ -1,5 +1,6 @@
 //import { describe, it } from 'mocha';
 import { Cat } from '../cats/cat';
+import { CatMouth } from '../cats/catMouth';
 var assert = require('assert');
 
 describe('Cat', function () {
@@ -25,5 +26,15 @@ describe('Cat', function () {
         cat.setTail(typeOfTail);
 
         assert.equal(cat.tail, typeOfTail);
+    });
+
+    it('can set mouth', async function () {
+        const numberOfTeeth = 2;
+        const cat = new Cat();
+        const catMouth = new CatMouth();
+        catMouth.setNumberOfTeeth(numberOfTeeth);
+        cat.setMouth(catMouth);
+
+        assert.equal(cat.mouth.numberOfTeeth, numberOfTeeth);
     });
 });
